@@ -1,0 +1,23 @@
+{
+"Core":  {
+    "MaxDays":  1000
+}, 
+"Events":  {
+    "Aliens":  {
+                    "RandomChance":  10000000,
+                    "Enabled":  true
+                },
+    "Blackhole":  {
+                        "RandomChance":  500000000,
+                        "Enabled":  true
+                    },
+    "SolarFlare":  {
+                        "RandomChance":  1000000000,
+                        "Enabled":  true
+                    },
+    "Asteroid":  {
+                    "RandomChance":  5000000,
+                    "Enabled":  true
+                }
+            }
+}
