@@ -2,6 +2,6 @@
 A game, of sorts...
 
 ## TODO
-* EVRYTHING
+* EVERYTHING
 
 ##### All files in this project for now, is just scribbled down all over the place.
