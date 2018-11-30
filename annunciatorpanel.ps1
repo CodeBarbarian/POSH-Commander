@@ -1,16 +1,16 @@
-<#Write-Host("
------------
-| Monitor |
------------
-")
-
+# Next step - Get this into a JSON file
 #>
 
-$Elements = @(
-    New-Object -TypeName PSObject -Property @{Name="Nagios"; Type="OK"}
-    New-Object -TypeName PSObject -Property @{Name="Monitor"; Type="Critical"}
+$Engines  = @(
+    New-Object -TypeName PSObject -Property @{Name="Engine #1"; Type="OK"}
+    New-Object -TypeName PSObject -Property @{Name="Engine #2"; Type="Critical"}
+    New-Object -TypeName PSObject -Property @{Name="Engine #3"; Type="Critical"}
+    New-Object -TypeName PSObject -Property @{Name="Engine #4"; Type="Critical"}
 )
 
+$Navigation = @(
+    New-Object -TypeName PSObject -Property @{Name="NAV #1 ->"; Type="Warning"}
+)
 
 
 Function BuildPanel {
@@ -67,12 +67,19 @@ Function BuildPanel {
         
         # Write the Name
         Switch($Element.Type) {
-            
+            'OK' {
+                Write-Host("$($Element.Name)") -NoNewline -ForegroundColor Green
+            }
+
+            'Warning' {
+                Write-Host("$($Element.Name)") -NoNewline -ForegroundColor Yellow
+            }
+
+            'Critical' {
+                Write-Host("$($Element.Name)") -NoNewline -ForegroundColor Red
+            }
         }
-            Write-Host("$($Element.Name)") -NoNewline -ForegroundColor Green
-        
-        
-        
+            
         for ($I = 1; $I -le $HowManySpaces; $I++) {
             Write-Host(" ") -NoNewline
         }
@@ -109,11 +116,6 @@ Function BuildPanel {
 
     Write-Host("")
 }
-<#
-$ObjectLength = $Elements.Length
-foreach($Element in $Elements) {
-    $Element.Name
-}
-#>
 
-BuildPanel -Name $Elements
+BuildPanel -Name $Engines
+BuildPanel -Name $Navigation
