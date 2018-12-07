@@ -1,0 +1,31 @@
+{"
+    Congratulations Commander. You are now ready to endure on this space adventure. 
+    During this adventure, you will need to earn hard earned cash, which you will need to buy new ships, 
+    and start to construct your fleet, and conquer the universe.
+
+    This game is a choose your own adventure type of game. You will be asked to do certain tasks, and will be challenged
+    to fix problems with your ship.
+
+    The following are game over conditions:
+        * If you fail to complete a challenge
+        * If your ship is destroyed
+        * If you die
+        * If you are unable to complete scenarios
+
+    The following are the win conditions
+        * If you are able to complete the game
+
+    Mentions:
+        
+        Prateek Singh
+            This project could not have been done without the use of open source code,
+            In this project, I am using Gridify from Prateek Singh - I have followed his blog for a long time, he is a talented developer, 
+            and you should definitely check him out @https://ridicurious.com/ and https://geekeefy.wordpress.com/
+            
+    Ready? 
+
+    If you are ready to start the game, issue the following command: 
+    ' Start-Game '
+
+    Good luck!
+"}

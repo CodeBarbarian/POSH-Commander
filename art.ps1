@@ -92,7 +92,6 @@ function Get-AsciiArt-Ship {
 
 Class AsciiArt {
     AsciiArt() {
-
     }
 
     loadArt([String] $ArtName) {

@@ -6,6 +6,7 @@ $Engines  = @(
     New-Object -TypeName PSObject -Property @{Name="Engine #2"; Type="Critical"}
     New-Object -TypeName PSObject -Property @{Name="Engine #3"; Type="Critical"}
     New-Object -TypeName PSObject -Property @{Name="Engine #4"; Type="Critical"}
+    New-Object -TypeName PSObject -Property @{Name="Router Primary #1"; Type="OK"}
 )
 
 $Navigation = @(
